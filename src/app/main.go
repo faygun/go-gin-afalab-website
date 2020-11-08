@@ -1,7 +1,17 @@
 package main
 
+import (
+	"os"
+)
+
 func main() {
 	r := registerRoutes()
 
-	r.Run(":3000")
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "3000"
+	}
+
+	r.Run(":" + port)
 }
