@@ -32,7 +32,7 @@
 					latLng: [latitude,longitude],
 					options: {
 						icon: new google.maps.MarkerImage(
-							"images/map-pin.png",
+							"/public/images/map-pin.png",
 							new google.maps.Size(73, 95, "px", "px")
 						)
 					}
