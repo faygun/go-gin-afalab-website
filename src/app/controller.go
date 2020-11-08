@@ -23,7 +23,9 @@ func registerRoutes() *gin.Engine {
 			CurrentPage: "home",
 		})
 	})
-
+	r.GET("/.well-known/acme-challenge", func(c *gin.Context) {
+		c.JSON(http.StatusOK, "OK")
+	})
 	r.GET("/about", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "about.html", PageSetting{
 			CurrentPage: "about",
