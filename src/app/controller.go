@@ -38,9 +38,9 @@ func registerRoutes() *gin.Engine {
 		})
 	})
 
-	r.GET("/clients", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "clients.html", PageSetting{
-			CurrentPage: "clients",
+	r.GET("/services", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "services.html", PageSetting{
+			CurrentPage: "services",
 		})
 	})
 
