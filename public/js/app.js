@@ -40,6 +40,19 @@
 			});
 			
 		}
+
+		$(".contact-form").on("submit", (e)=>{
+			e.preventDefault();
+			var data = {
+				username : $("#username").val(),
+				message: $("#message").val(),
+				email: $("#email").val()
+			}
+			
+			$.post( "/contact", data, function( res ) {
+				alert(res);	
+			});
+		})
 	});
 
 	$(window).load(function(){
