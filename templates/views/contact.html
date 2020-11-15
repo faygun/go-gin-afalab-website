@@ -1,8 +1,6 @@
 {{template "pageStart.html" .}}
-<iframe class="map" src="https://www.google.co.uk/maps/place/220+Gunnersbury+Ave,+Chiswick,+London+W3+8LB/@51.498406,-0.2840568,17z/data=!3m1!4b1!4m5!3m4!1s0x48760de203a23c43:0x91597310b2878fff!8m2!3d51.498406!4d-0.2818681">
 
-</iframe>
-<!-- <div class="map" data-latitude="51.4982875" data-longitude="-0.2824228" ></div> -->
+<div class="map" data-latitude="51.4982875" data-longitude="-0.2824228" ></div>
 
 <div class="fullwidth-block contact-area">
 	<div class="container">
@@ -12,34 +10,34 @@
 				<address>
 					220 Gunnersbury Ave <br>
 					London, W3 8LB <br>
-					<a href="tel:(+44) 747 165 0571">(+44) 7471 650571</a> <br>
+					<a href="tel:(+44) 7471 650571">(+44) 7471 650571</a> <br>
 					<a href="mailto:hello@afalab.com">hello@afalab.com</a>
 				</address>
 			</div>
 			<div class="col-md-7">
-				<div class="contact-form">
+				<form method="POST" class="contact-form">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="control">
 								<i class="fa fa-user"></i>
-								<input type="text" placeholder="Name...">
+								<input type="text" id="username" placeholder="Name...">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="control">
 								<i class="fa fa-envelope"></i>
-								<input type="text" placeholder="Email...">
+								<input type="email" id="email" placeholder="Email...">
 							</div>
 						</div>
 					</div>
 					<div class="control">
 						<i class="fa fa-pencil"></i>
-						<textarea placeholder="Message"></textarea>
+						<textarea placeholder="Message" id="message"></textarea>
 					</div>
 					<p class="right-aligned">
 						<input type="submit" value="Send message">
 					</p>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
