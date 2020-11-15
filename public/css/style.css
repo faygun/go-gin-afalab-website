@@ -384,7 +384,7 @@ form textarea {
     overflow: hidden;
     height: 0; }
   .client-grid .client {
-    width: 25%;
+    width: 20%;
     float: left;
     height: 230px;
     display: -webkit-box;
@@ -393,9 +393,9 @@ form textarea {
     display: flex;
     border-left: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8; }
-    .client-grid .client:first-child, .client-grid .client:nth-child(5n) {
+    .client-grid .client:first-child, .client-grid .client:nth-child(6n), .client-grid .client:nth-child(11n) {
       border-left: none; }
-    .client-grid .client:nth-child(5), .client-grid .client:nth-child(6), .client-grid .client:nth-child(7), .client-grid .client:nth-child(8) {
+    .client-grid .client:nth-child(11), .client-grid .client:nth-child(12), .client-grid .client:nth-child(13){
       border-bottom: none; }
     @media screen and (max-width: 768px) {
       .client-grid .client {
@@ -1528,4 +1528,21 @@ form textarea {
     background-color: #ed5151;
     color: white; }
 
+.text-center{
+  text-align: center;
+}
+
+.p-70{
+  padding: 70px 0px;
+}
+
+.p-50{
+  padding: 50px 0px;
+}
+.p-40{
+  padding: 40px 0px;
+}
+.lh-30{
+  line-height: 30px;
+}
 /*# sourceMappingURL=style.css.map */
